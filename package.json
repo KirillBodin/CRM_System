@@ -1,0 +1,15 @@
+{
+  "name": "crm_system",
+  "version": "1.0.0",
+  "description": "Fullstack. Angular. Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "f"
+  },
+  "author": "Kirill",
+  "license": "ISC"
+}
