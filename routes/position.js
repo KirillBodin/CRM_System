@@ -3,13 +3,13 @@ const controller = require('../controllers/position')
 const router = express.Router()
 
 
-router.get('/:id', controller.getByCategoryId())
+router.get('/:id', passport.authenticate('jwt', {session: false}), controller.getByCategoryId)
 
-router.post('/', controller.create())
+router.post('/', passport.authenticate('jwt', {session: false}), controller.create)
 
-router.patch('/:id', controller.update())
+router.patch('/:id', passport.authenticate('jwt', {session: false}), controller.update)
 
-router.delete('/:id', controller.delete())
+router.delete('/:id', passport.authenticate('jwt', {session: false}), controller.delete)
 
 
 module.exports = router
